@@ -7,6 +7,16 @@ public class Actors {
 	private String firstName;
 	private String lastName;
 	
+	public Actors() {
+	}
+
+	public Actors(int id, String firstName, String lastName) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
 	@Override
 	public String toString() {
 		return "Actors [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + "]";
