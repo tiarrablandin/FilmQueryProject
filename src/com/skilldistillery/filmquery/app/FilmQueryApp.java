@@ -51,7 +51,7 @@ public class FilmQueryApp {
 					if (film != null) {
 						System.out.println("Film: " + film.getTitle() + "\nRelease Year: " + film.getReleaseYear()
 								+ "\nRating: " + film.getRating() + "\nDescription: " + film.getDescription()
-								+ "\nLanguage: " + film.getLanguageType());
+								+ "\nLanguage: " + film.getLanguageType() + "\nCast: " + dba.findActorsByFilmId(id));
 					} else {
 						System.out.println("Error: Enter valid Film Id.");
 					}
